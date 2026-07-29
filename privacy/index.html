@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Worlog privacy policy and data handling information.">
+  <title>Privacy Policy | Worlog</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #14373f;
+      --muted: #59747a;
+      --line: #d6e7e8;
+      --surface: #ffffff;
+      --page: #f5fbfa;
+      --accent: #08a2c5;
+      --accent-strong: #087d98;
+      --coral: #e86f68;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      letter-spacing: 0;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: var(--surface);
+    }
+
+    .header-inner,
+    main,
+    footer {
+      width: min(760px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      gap: 20px;
+    }
+
+    .brand {
+      color: var(--ink);
+      font-size: 22px;
+      font-weight: 850;
+      text-decoration: none;
+    }
+
+    .languages {
+      display: inline-flex;
+      padding: 3px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--page);
+    }
+
+    .languages button {
+      min-width: 76px;
+      border: 0;
+      border-radius: 6px;
+      padding: 7px 10px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 750;
+      cursor: pointer;
+    }
+
+    .languages button[aria-pressed="true"] {
+      background: var(--surface);
+      color: var(--accent-strong);
+      box-shadow: 0 1px 3px rgba(20, 55, 63, 0.12);
+    }
+
+    main {
+      padding: 64px 0 72px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 8vw, 52px);
+      line-height: 1.12;
+      font-weight: 900;
+    }
+
+    .updated {
+      margin: 12px 0 38px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 650;
+    }
+
+    .summary {
+      margin: 0 0 46px;
+      border-left: 5px solid var(--coral);
+      padding: 18px 22px;
+      background: var(--surface);
+    }
+
+    h2 {
+      margin: 42px 0 10px;
+      font-size: 22px;
+      line-height: 1.35;
+      font-weight: 850;
+    }
+
+    p,
+    ul {
+      margin: 0 0 18px;
+    }
+
+    ul {
+      padding-left: 1.35em;
+    }
+
+    a {
+      color: var(--accent-strong);
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0 44px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    [data-language] {
+      display: none;
+    }
+
+    [data-language].active {
+      display: block;
+    }
+
+    @media (max-width: 540px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px 0;
+      }
+
+      main {
+        padding-top: 44px;
+      }
+
+      .languages {
+        width: 100%;
+      }
+
+      .languages button {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="./">Worlog</a>
+      <div class="languages" aria-label="Language">
+        <button id="select-ja" type="button" aria-pressed="true">日本語</button>
+        <button id="select-en" type="button" aria-pressed="false">English</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article id="policy-ja" data-language="ja" class="active">
+      <h1>プライバシーポリシー</h1>
+      <p class="updated">最終更新日：2026年7月29日</p>
+
+      <div class="summary">
+        Worlogは、旅行記録を利用者の端末内に保存することを基本として設計されています。
+        アカウント登録、広告、第三者の分析SDK、位置情報の取得、利用者の追跡は行いません。
+      </div>
+
+      <h2>利用者が入力する情報</h2>
+      <p>本アプリでは、次の情報を入力・管理できます。</p>
+      <ul>
+        <li>訪問した国・地域および訪問ステータス</li>
+        <li>旅程、日付、空港およびフライトルート</li>
+        <li>サウンド、触覚フィードバック、表示などの環境設定</li>
+      </ul>
+      <p>
+        これらの情報は利用者の端末にある本アプリ専用領域へ保存されます。
+        開発者がこれらを受信または閲覧することはありません。
+      </p>
+
+      <h2>端末内での処理</h2>
+      <p>
+        本アプリは、地球儀、パスポート、統計、ランク、旅程、サウンドおよび
+        触覚フィードバックを表示するため、旅行記録を端末内で処理します。
+        この処理によって旅行記録が開発者へ送信されることはありません。
+      </p>
+      <p>
+        アプリ専用設定の保存にはUserDefaultsを使用し、アニメーション、サウンド、
+        触覚のタイミング調整にはシステム稼働時間を使用します。これらは識別や
+        追跡に使用されず、端末外へ送信されません。
+      </p>
+
+      <h2>シェア機能</h2>
+      <p>
+        地球儀画像は、利用者の操作後にのみiOS標準の共有シートへ渡されます。
+        本アプリが自動でアップロードすることや、開発者が画像を受け取ることは
+        ありません。共有先の第三者サービスは、独自のプライバシーポリシーに
+        基づいて共有内容を取り扱います。
+      </p>
+
+      <h2>Appleのサービスとバックアップ</h2>
+      <p>
+        本アプリはMapKit、RealityKit、Core Haptics、iOS共有シートなど、
+        Appleが提供する機能を利用する場合があります。Appleはサービス提供に
+        必要な技術情報を同社のポリシーに基づいて処理する場合があります。
+        本アプリは保存済みの旅行記録をこれらの機能を通じてAppleへ送信しません。
+      </p>
+      <p>
+        端末やAppleアカウントの設定によっては、本アプリのファイルがiCloudまたは
+        端末バックアップに含まれる場合があります。開発者はこれらのバックアップへ
+        アクセスできません。
+        <a href="https://www.apple.com/jp/legal/privacy/">Appleのプライバシーポリシー</a>
+        もご確認ください。
+      </p>
+
+      <h2>開発者が収集しない情報</h2>
+      <p>開発者は、本アプリを通じて次の情報を収集しません。</p>
+      <ul>
+        <li>氏名、メールアドレス、アカウント認証情報</li>
+        <li>端末の正確またはおおよその位置情報</li>
+        <li>連絡先、写真、健康情報、金融情報</li>
+        <li>広告識別子、利用状況分析、クラッシュ分析、診断情報</li>
+        <li>アプリやウェブサイトを横断した追跡に使用するデータ</li>
+      </ul>
+
+      <h2>第三者提供</h2>
+      <p>
+        開発者は本アプリを通じて旅行記録や個人情報を受信しないため、これらを
+        広告事業者やデータブローカーへ販売、貸与または提供しません。サポート
+        メールなどにより直接受け取った情報は、問い合わせへの回答、法令上の義務、
+        または権利・安全の保護に必要な範囲でのみ取り扱います。
+      </p>
+
+      <h2>保存期間と削除</h2>
+      <p>
+        旅行記録は、利用者が記録を削除する、利用可能なリセット機能を使う、
+        または本アプリをアンインストールするまで端末内に残ります。端末内にのみ
+        保存されたデータを開発者は保有していないため、開発者への削除依頼は
+        必要ありません。バックアップの削除はAppleアカウントや端末の設定から
+        管理してください。
+      </p>
+
+      <h2>安全管理</h2>
+      <p>
+        WorlogはiOSのアプリサンドボックスおよびApple端末のセキュリティ機能を
+        利用します。ただし、電子的な保存方法に完全な安全性はなく、絶対的な
+        安全を保証するものではありません。
+      </p>
+
+      <h2>子どものプライバシー</h2>
+      <p>
+        Worlogは子どもの個人情報を意図的に収集しません。本アプリはアカウント
+        登録を必要とせず、旅行記録を開発者へ送信しません。
+      </p>
+
+      <h2>本ポリシーの変更</h2>
+      <p>
+        本アプリの機能またはデータ取扱いが変更された場合、本ポリシーを更新する
+        ことがあります。その場合は最終更新日を変更し、このURLで改定版を公開します。
+      </p>
+
+      <h2>お問い合わせ</h2>
+      <p>
+        本ポリシーに関するお問い合わせは、
+        <a href="https://github.com/riot-ddp/worlog-ios/issues">Worlogサポートページ</a>
+        をご利用ください。
+      </p>
+    </article>
+
+    <article id="policy-en" data-language="en" lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="updated">Last updated: July 29, 2026</p>
+
+      <div class="summary">
+        Worlog is designed to keep your travel records on your device. It does
+        not require an account and does not use advertising, third-party
+        analytics SDKs, device location, or cross-app tracking.
+      </div>
+
+      <h2>Information You Enter</h2>
+      <p>The App lets you enter and manage:</p>
+      <ul>
+        <li>countries and regions you have visited and their visit status;</li>
+        <li>journeys, dates, airports, and flight routes; and</li>
+        <li>sound, haptic, display, and other App preferences.</li>
+      </ul>
+      <p>
+        This information is stored locally in the App's container on your
+        device. The developer does not receive or have access to it.
+      </p>
+
+      <h2>On-device Processing</h2>
+      <p>
+        The App processes travel records on your device to render your globe,
+        passport, statistics, ranks, journeys, sound effects, and haptic
+        feedback. This processing does not transmit travel records to the
+        developer.
+      </p>
+      <p>
+        Worlog uses UserDefaults for App-only settings and system uptime to
+        coordinate animation, sound, and haptic timing. This information is not
+        used to identify or track you and is not sent off your device.
+      </p>
+
+      <h2>Sharing</h2>
+      <p>
+        A globe image is passed to the standard iOS share sheet only after your
+        action. The App does not automatically upload the image, and the
+        developer does not receive it. A service you select in the share sheet
+        handles the content under its own privacy policy.
+      </p>
+
+      <h2>Apple Services and Backups</h2>
+      <p>
+        The App may use Apple-provided frameworks and services, including
+        MapKit, RealityKit, Core Haptics, and the iOS share sheet. Apple may
+        process technical information needed to provide those services under
+        its own policy. Worlog does not send saved travel records to Apple
+        through these features.
+      </p>
+      <p>
+        Files in the App's container may be included in iCloud or device
+        backups depending on your settings. The developer cannot access those
+        backups. See
+        <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.
+      </p>
+
+      <h2>Information We Do Not Collect</h2>
+      <p>The developer does not collect through the App:</p>
+      <ul>
+        <li>names, email addresses, or account credentials;</li>
+        <li>precise or approximate device location;</li>
+        <li>contacts, photos, health information, or financial information;</li>
+        <li>advertising identifiers, analytics, crash data, or diagnostics; or</li>
+        <li>data used for cross-app or cross-website tracking.</li>
+      </ul>
+
+      <h2>Disclosure</h2>
+      <p>
+        Because the developer does not receive travel records or personal
+        information through the App, we do not sell, rent, or disclose that
+        information to advertisers or data brokers. Information sent directly
+        in a support email is used only to respond, comply with law, or protect
+        rights, safety, and security.
+      </p>
+
+      <h2>Retention and Deletion</h2>
+      <p>
+        Travel records remain on your device until you delete records, use an
+        available reset function, or uninstall the App. The developer does not
+        possess on-device App data, so no developer deletion request is needed.
+        Backups are managed through your Apple account and device settings.
+      </p>
+
+      <h2>Security</h2>
+      <p>
+        Worlog relies on the iOS application sandbox and Apple device security
+        features. No method of electronic storage is completely secure, so
+        absolute security cannot be guaranteed.
+      </p>
+
+      <h2>Children's Privacy</h2>
+      <p>
+        Worlog does not knowingly collect personal information from children.
+        The App does not require an account or send travel records to the
+        developer.
+      </p>
+
+      <h2>Changes to This Policy</h2>
+      <p>
+        We may update this policy when the App's features or data practices
+        change. We will revise the last-updated date and publish the updated
+        policy at this URL.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        For questions about this policy, use the
+        <a href="https://github.com/riot-ddp/worlog-ios/issues">Worlog support page</a>.
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    Worlog · Privacy Policy
+  </footer>
+
+  <script>
+    const sections = {
+      ja: document.getElementById("policy-ja"),
+      en: document.getElementById("policy-en")
+    };
+    const buttons = {
+      ja: document.getElementById("select-ja"),
+      en: document.getElementById("select-en")
+    };
+
+    function selectLanguage(language) {
+      for (const key of Object.keys(sections)) {
+        const selected = key === language;
+        sections[key].classList.toggle("active", selected);
+        buttons[key].setAttribute("aria-pressed", String(selected));
+      }
+      document.documentElement.lang = language;
+      localStorage.setItem("worlog-policy-language", language);
+    }
+
+    buttons.ja.addEventListener("click", () => selectLanguage("ja"));
+    buttons.en.addEventListener("click", () => selectLanguage("en"));
+
+    const saved = localStorage.getItem("worlog-policy-language");
+    const preferred = navigator.language.startsWith("ja") ? "ja" : "en";
+    selectLanguage(saved === "ja" || saved === "en" ? saved : preferred);
+  </script>
+</body>
+</html>
