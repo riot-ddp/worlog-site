@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Worlog support, troubleshooting, and contact information.">
+  <title>Support | Worlog</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #14373f;
+      --muted: #59747a;
+      --line: #d6e7e8;
+      --surface: #ffffff;
+      --page: #f5fbfa;
+      --accent: #08a2c5;
+      --accent-strong: #087d98;
+      --coral: #e86f68;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      letter-spacing: 0;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      background: var(--surface);
+    }
+
+    .header-inner,
+    main,
+    footer {
+      width: min(760px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 72px;
+      gap: 20px;
+    }
+
+    .brand {
+      color: var(--ink);
+      font-size: 22px;
+      font-weight: 850;
+      text-decoration: none;
+    }
+
+    .languages {
+      display: inline-flex;
+      padding: 3px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--page);
+    }
+
+    .languages button {
+      min-width: 76px;
+      border: 0;
+      border-radius: 6px;
+      padding: 7px 10px;
+      background: transparent;
+      color: var(--muted);
+      font: inherit;
+      font-size: 13px;
+      font-weight: 750;
+      cursor: pointer;
+    }
+
+    .languages button[aria-pressed="true"] {
+      background: var(--surface);
+      color: var(--accent-strong);
+      box-shadow: 0 1px 3px rgba(20, 55, 63, 0.12);
+    }
+
+    main {
+      padding: 64px 0 72px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 8vw, 52px);
+      line-height: 1.12;
+      font-weight: 900;
+    }
+
+    .intro {
+      margin: 14px 0 40px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    h2 {
+      margin: 38px 0 10px;
+      font-size: 22px;
+      line-height: 1.35;
+      font-weight: 850;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    .contact {
+      margin-top: 44px;
+      border-left: 5px solid var(--coral);
+      padding: 22px;
+      background: var(--surface);
+    }
+
+    .contact h2 {
+      margin-top: 0;
+    }
+
+    .button {
+      display: inline-block;
+      border-radius: 7px;
+      padding: 11px 16px;
+      background: var(--accent);
+      color: #ffffff;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    a {
+      color: var(--accent-strong);
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0 44px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    [data-language] {
+      display: none;
+    }
+
+    [data-language].active {
+      display: block;
+    }
+
+    @media (max-width: 540px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px 0;
+      }
+
+      main {
+        padding-top: 44px;
+      }
+
+      .languages {
+        width: 100%;
+      }
+
+      .languages button {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a class="brand" href="../">Worlog</a>
+      <div class="languages" aria-label="Language">
+        <button id="select-ja" type="button" aria-pressed="true">日本語</button>
+        <button id="select-en" type="button" aria-pressed="false">English</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article id="support-ja" data-language="ja" class="active">
+      <h1>Worlogサポート</h1>
+      <p class="intro">旅行記録は端末内に保存されます。困ったときは以下をご確認ください。</p>
+
+      <h2>記録を修正する</h2>
+      <p>
+        Countriesタブで国を選択すると、訪問ステータスを変更できます。
+        Journeysタブでは旅程とフライトを追加・編集できます。
+      </p>
+
+      <h2>地球儀が表示されない</h2>
+      <p>
+        アプリを終了して再度開いてください。初回起動時は国境データと地球儀を
+        端末内で準備するため、表示まで少し時間がかかる場合があります。
+      </p>
+
+      <h2>サウンド・触覚を変更する</h2>
+      <p>
+        SettingsのExperienceから、サウンドエフェクトと触覚フィードバックを
+        個別にオン・オフできます。
+      </p>
+
+      <h2>データを削除する</h2>
+      <p>
+        SettingsのReset All Dataから訪問ステータスをリセットできます。
+        アプリを削除すると、端末内に保存されたWorlogのデータも削除されます。
+      </p>
+
+      <div class="contact">
+        <h2>お問い合わせ</h2>
+        <p>
+          不具合を報告する際は、端末モデル、iOSのバージョン、Worlogの
+          バージョン、再現手順を添えてください。旅行記録などの個人情報は
+          記載しないでください。
+        </p>
+        <a class="button" href="https://github.com/riot-ddp/worlog-ios/issues">
+          サポートリクエストを開く
+        </a>
+      </div>
+
+      <p><a href="../privacy/">プライバシーポリシー</a></p>
+    </article>
+
+    <article id="support-en" data-language="en" lang="en">
+      <h1>Worlog Support</h1>
+      <p class="intro">Your travel records stay on your device. Start here when you need help.</p>
+
+      <h2>Edit a travel record</h2>
+      <p>
+        Select a country in the Countries tab to change its visit status.
+        Add or edit journeys and flights from the Journeys tab.
+      </p>
+
+      <h2>The globe does not appear</h2>
+      <p>
+        Quit and reopen the App. On first launch, Worlog prepares country
+        boundary and globe data on your device, so it may take a moment to appear.
+      </p>
+
+      <h2>Change sound or haptics</h2>
+      <p>
+        Open Experience in Settings to turn sound effects and haptic feedback
+        on or off independently.
+      </p>
+
+      <h2>Delete your data</h2>
+      <p>
+        Use Reset All Data in Settings to reset country statuses. Deleting the
+        App also removes Worlog data stored locally on the device.
+      </p>
+
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>
+          Include your device model, iOS version, Worlog version, and steps to
+          reproduce the issue. Do not include personal travel records.
+        </p>
+        <a class="button" href="https://github.com/riot-ddp/worlog-ios/issues">
+          Open a support request
+        </a>
+      </div>
+
+      <p><a href="../privacy/">Privacy Policy</a></p>
+    </article>
+  </main>
+
+  <footer>
+    Worlog · Support
+  </footer>
+
+  <script>
+    const sections = {
+      ja: document.getElementById("support-ja"),
+      en: document.getElementById("support-en")
+    };
+    const buttons = {
+      ja: document.getElementById("select-ja"),
+      en: document.getElementById("select-en")
+    };
+
+    function selectLanguage(language) {
+      for (const key of Object.keys(sections)) {
+        const selected = key === language;
+        sections[key].classList.toggle("active", selected);
+        buttons[key].setAttribute("aria-pressed", String(selected));
+      }
+      document.documentElement.lang = language;
+      localStorage.setItem("worlog-support-language", language);
+    }
+
+    buttons.ja.addEventListener("click", () => selectLanguage("ja"));
+    buttons.en.addEventListener("click", () => selectLanguage("en"));
+
+    const saved = localStorage.getItem("worlog-support-language");
+    const preferred = navigator.language.startsWith("ja") ? "ja" : "en";
+    selectLanguage(saved === "ja" || saved === "en" ? saved : preferred);
+  </script>
+</body>
+</html>
